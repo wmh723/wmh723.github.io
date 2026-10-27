@@ -1,10 +1,10 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
+  title: 'havery Homepage',
+  author: 'havery',
+  headerTitle: 'havery homepage',
+  description: 'havery homepage',
+  language: 'zh-cn',
   theme: 'system', // system, dark or light
   siteUrl: 'https://wmh723.github.io',
   siteRepo: 'https://github.com/wmh723/wmh723.github.io',
@@ -12,9 +12,9 @@ const siteMetadata = {
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
-  github: 'https://github.com',
-  x: 'https://twitter.com/x',
+  email: 'havery_123@hotmail.com',
+  github: 'https://github.com/wmh723',
+  x: 'https://twitter.com/',
   // twitter: 'https://twitter.com/Twitter',
   facebook: 'https://facebook.com',
   youtube: 'https://youtube.com',
