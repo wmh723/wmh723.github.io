@@ -1,12 +1,10 @@
-/**
- * @typedef {Object} Project
- * @property {string} title
- * @property {string} description
- * @property {string} imgSrc
- * @property {string} href
- */
-
-/** @type {Project[]} */
-const projectsData = []
-
+const projectsData = [
+  // 占位项目，后面可以删掉
+  {
+    title: "",
+    description: "",
+    imgSrc: "",
+    href: ""
+  }
+]
 export default projectsData
