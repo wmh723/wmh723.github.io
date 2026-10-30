@@ -6,7 +6,7 @@ export default function Home() {
     <div className="relative -mt-6 flex h-[calc(100vh-4rem)] w-full items-center justify-center overflow-hidden">
       {/* 背景圖片 */}
       <Image
-        src="/static/images/home-bg.jpg"   // ← 改成你的圖片路徑
+        src="/static/images/daysky.jpg"   // ← 改成你的圖片路徑
         alt="Homepage background"
         fill
         priority
@@ -15,7 +15,7 @@ export default function Home() {
       />
 
       {/* 半透明遮罩（讓文字更清楚，可依喜好調整透明度） */}
-      <div className="absolute inset-0 bg-black/40" />
+      <div className="absolute inset-0 bg-black/15" />
 
       {/* 置中大字 */}
       <div className="relative z-10 px-4 text-center text-white">
