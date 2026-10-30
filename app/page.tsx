@@ -1,19 +1,13 @@
-import Image from 'next/image'
 import Link from '@/components/Link'
 
 export default function Home() {
   return (
-    <div className="relative -mt-6 flex h-[calc(100vh-4rem)] w-full items-center justify-center overflow-hidden">
-      {/* 背景圖片 */}
-      <Image
-        src="/static/images/daysky.jpg"
-        alt="Homepage background"
-        fill
-        priority
-        className="object-cover object-center"
-        sizes="100vw"
-      />
-
+    <div
+      className="relative -mt-6 flex h-[calc(100vh-4rem)] w-full items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: `url('/static/images/home-bg.jpg')`,
+      }}
+    >
       {/* 半透明遮罩 */}
       <div className="absolute inset-0 bg-black/15" />
 
@@ -22,7 +16,9 @@ export default function Home() {
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           Havery Homepage
         </h1>
-        <p className="mb-8 text-lg opacity-90 sm:text-xl md:text-2xl">Welecom to my homepage!</p>
+        <p className="mb-8 text-lg opacity-90 sm:text-xl md:text-2xl">
+          Welcome to my homepage!
+        </p>
 
         <Link
           href="/blog"
