@@ -16,9 +16,7 @@ export default function Home() {
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
           Havery Homepage
         </h1>
-        <p className="mb-8 text-lg opacity-90 sm:text-xl md:text-2xl">
-          Welcome to my homepage!
-        </p>
+        <p className="mb-8 text-lg opacity-90 sm:text-xl md:text-2xl">Welcome to my homepage!</p>
 
         <Link
           href="/blog"
