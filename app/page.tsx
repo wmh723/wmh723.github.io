@@ -6,7 +6,7 @@ export default function Home() {
     <div className="relative -mt-6 flex h-[calc(100vh-4rem)] w-full items-center justify-center overflow-hidden">
       {/* 背景圖片 */}
       <Image
-        src="/static/images/home-bg.jpg"
+        src="/static/images/daysky.jpg"
         alt="Homepage background"
         fill
         priority
