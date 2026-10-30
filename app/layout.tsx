@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const basePath = process.env.BASE_PATH || ''
 
-    return (
+  return (
     <html
       lang={siteMetadata.language}
       className={`${space_grotesk.variable} scroll-smooth`}
@@ -94,9 +94,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
-      
-      {/* 這裡是我們之前改的藍色背景 */}
-      <body className="bg-blue-50 pl-[calc(100vw-100%)] text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-100">
+      <body className="bg-gradient-to-b from-sky-50 to-blue-50/70 pl-[calc(100vw-100%)] text-slate-800 antialiased dark:from-slate-950 dark:to-slate-900 dark:text-slate-100">
         <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
           <SectionContainer>
@@ -110,3 +108,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </body>
     </html>
   )
+}
