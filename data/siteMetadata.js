@@ -14,7 +14,7 @@ const siteMetadata = {
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'havery_123@hotmail.com',
   github: 'https://github.com/wmh723',
-  x: 'https://x.com/havery',
+  x: 'https://x.com/havery2000',
   // twitter: 'https://twitter.com/Twitter',
   facebook: 'https://www.facebook.com/profile.php?id=61561132361108',
   youtube: 'https://www.youtube.com/channel/UCf48ILFtmUFC4zIZfnJ0Rew',
