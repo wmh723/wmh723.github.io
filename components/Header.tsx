@@ -15,10 +15,6 @@ const Header = () => {
 
   return (
     <header className={headerClass}>
-      {/* 後面的內容保持原樣 */}
-
-  return (
-    <header className={headerClass}>
       <Link href="/" aria-label={siteMetadata.headerTitle}>
         <div className="flex items-center justify-between">
           <div className="mr-3">
@@ -41,7 +37,7 @@ const Header = () => {
               <Link
                 key={link.title}
                 href={link.href}
-                className="hover:text-primary-500 dark:hover:text-primary-400 m-1 font-medium text-gray-900 dark:text-gray-100"
+                className="m-1 font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400"
               >
                 {link.title}
               </Link>
