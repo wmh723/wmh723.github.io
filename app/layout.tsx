@@ -1,3 +1,4 @@
+
 import 'css/tailwind.css'
 import 'pliny/search/algolia.css'
 import 'remark-github-blockquote-alert/alert.css'
@@ -12,6 +13,7 @@ import siteMetadata from '@/data/siteMetadata'
 import { ThemeProviders } from './theme-providers'
 import { Metadata } from 'next'
 import Script from 'next/script'
+
 const space_grotesk = Space_Grotesk({
   subsets: ['latin'],
   display: 'swap',
@@ -94,24 +96,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fff" />
       <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000" />
       <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
+
       <body className="bg-gradient-to-b from-sky-50 to-blue-50/70 pl-[calc(100vw-100%)] text-slate-800 antialiased dark:from-slate-950 dark:to-slate-900 dark:text-slate-100">
         <ThemeProviders>
-                  <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
+
           <Script
-            type="module"
             src="https://static.cloudflareinsights.com/beacon.min.js"
             data-cf-beacon='{"token":"107be7dcf0c740df844f2eecf3d3d7bc","spa":true}'
             strategy="afterInteractive"
           />
+
           <SectionContainer>
-            <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
-              <Header />
-              <main className="mb-auto">{children}</main>
-            </SearchProvider>
-            <Footer />
-          </SectionContainer>
-        </ThemeProviders>
             <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
               <Header />
               <main className="mb-auto">{children}</main>
