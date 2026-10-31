@@ -96,16 +96,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link rel="alternate" type="application/rss+xml" href={`${basePath}/feed.xml`} />
       <body className="bg-gradient-to-b from-sky-50 to-blue-50/70 pl-[calc(100vw-100%)] text-slate-800 antialiased dark:from-slate-950 dark:to-slate-900 dark:text-slate-100">
         <ThemeProviders>
+                  <ThemeProviders>
           <Analytics analyticsConfig={siteMetadata.analytics as AnalyticsConfig} />
-          
-            <Script
-             type="module"
-             src="https://static.cloudflareinsights.com/beacon.min.js"
-             data-cf-beacon='{"token":"107be7dcf0c740df844f2eecf3d3d7bc","spa":true}'
-             strategy="afterInteractive"
-            />
-
-  <SectionContainer>
+          <Script
+            type="module"
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            data-cf-beacon='{"token":"107be7dcf0c740df844f2eecf3d3d7bc","spa":true}'
+            strategy="afterInteractive"
+          />
+          <SectionContainer>
+            <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
+              <Header />
+              <main className="mb-auto">{children}</main>
+            </SearchProvider>
+            <Footer />
+          </SectionContainer>
+        </ThemeProviders>
             <SearchProvider searchConfig={siteMetadata.search as SearchConfig}>
               <Header />
               <main className="mb-auto">{children}</main>
