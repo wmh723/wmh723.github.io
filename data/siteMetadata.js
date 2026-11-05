@@ -22,7 +22,7 @@ const siteMetadata = {
   threads: 'https://www.threads.net',
   instagram: 'https://www.instagram.com/havery2000/',
   medium: 'https://medium.com',
-  bluesky: 'https://bsky.app/',
+  bluesky: 'https://bsky.app/profile/havery2000.bsky.social',
   locale: 'zh-tw',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
